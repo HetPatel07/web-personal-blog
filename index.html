@@ -10,11 +10,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>Document</title>
+    <title>HOME</title>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header id="header">
+      <nav>
+        <div class="bar">
+          <i class="fas fa-bars barIcon" id="barOpen" onclick="bar()"></i>
+          <i class="fas fa-times cancelIcon" id="barClose" onclick="bar()"></i>
+        </div>
+        <ul class="navBar" id="navBar">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="home" id="home">
       <video
@@ -35,7 +46,7 @@
       <div class="overlay"></div>
 
       <div class="homeContent">
-        <p><img src="./assets/Sigscan_white copy.png" alt="" /></p>
+        <p class="autograph">Het Patel</p>
         <h2>HET PATEL</h2>
         <p>TENNIS PLAYER - CODER - LEARNER</p>
         <div class="angleDownIcon">
@@ -104,21 +115,18 @@
         <h3>STAY IN TOUCH</h3>
       </div>
       <div class="mediaConnect">
-          <ul>
-              <li><a href="">FACEBOOK</a></li>
-              <li><a href="">INSTAGRAM</a></li>
-              <li><a href="">GITHUB</a></li>
-          </ul>
+        <ul>
+          <li><a href="">FACEBOOK</a></li>
+          <li><a href="">INSTAGRAM</a></li>
+          <li><a href="">GITHUB</a></li>
+        </ul>
 
-          <div class="copyRight">
-              <a href="">@2021 by Het Patel</a>
-          </div>
+        <div class="copyRight">
+          <a href="">@2021 by Het Patel</a>
+        </div>
       </div>
-
     </footer>
-    <script>
-      // console.log(document.getElementById('vid'));
-      // document.getElementById('vid').play();
+    <script src="./script.js">
     </script>
   </body>
 </html>
