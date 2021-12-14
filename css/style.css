@@ -282,6 +282,11 @@ footer .stayInTouch {
   font-size: 24px;
   font-weight: 200;
   letter-spacing: 3px;
+  transition: 0.3s all;
+}
+.mediaConnect ul li a:hover {
+  color: rgba(166, 162, 162); 
+  transition: 0.3s all;
 }
 .mediaConnect .copyRight {
   padding: 80px 0 30px 0;
@@ -394,6 +399,92 @@ footer .stayInTouch {
   border-radius: 50%;
 }
 
+
+/* about resume starts */
+
+.resume{
+  font-family: work-sans;
+}
+.resumeContent{
+  width: 70%;
+  margin: auto;
+  padding: 50px 0 0 0;
+  /* margin-top: 50px; */
+}
+
+.resumeContent h2{
+  font-size: 40px;
+  text-align: center;
+}
+.resumeContent h3{
+  font-size: 25px;
+}
+.workExperience{
+  /* margin-top: ; */
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+  border-bottom: 1px solid lightgray;
+
+  /* flex: 1 1; */
+}
+.workExperienceTableLeft, .workExperienceTableRight{
+  width: 50%;
+}
+.workExperienceTableRightContent{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  /* column-gap: 5px; */
+}
+.workExperienceTableRightContent:nth-last-of-type(1){
+  margin-bottom: 0;
+}
+.workExperienceTableRight .contentYear{
+  width: 25%;
+}
+.workExperienceTableRight .contentPara{
+  margin-left: 20px;
+  width: 75%;
+}
+.workExperienceTableRight .contentPara h4{
+  font-size: 18px;
+}
+.workExperienceTableRight .contentPara h5{
+  padding: 10px 0;
+  font-size: 15px;
+}
+.workExperienceTableRight ul li{
+  /* list-style-type: none; */
+  margin-left: 15px;
+  text-align: justify;
+  padding: 8px 0;
+  /* font-size: 13px; */
+}
+.resume .underline, #projects .underline{
+  margin-top: 15px;
+  margin-bottom: 40px;
+  /* margin-left: 0; */
+  /* margin: 0; */
+}
+/* about resume ends */
+/* about project starts */
+#projects{
+  padding: 50px 0 0 0;
+}
+.projectHeading{
+  width: 70%;
+  margin: auto;
+}
+#projects h2{
+  font-family: work-sans;
+  font-size: 40px;
+  text-align: center;
+  
+  /* margin-bottom: 50px; */
+}
+
+/* about project ends */
 /* About ends */
 /* Gallery starts */
 #gallery {
@@ -405,13 +496,13 @@ footer .stayInTouch {
   font-size: 48px;
   text-align: center;
 }
-.gallery .underline {
+.underline {
   width: 50px;
   padding: 0px 20px;
   height: 5px;
   background-color: #333;
   border-radius: 5px;
-  margin:auto;
+  margin: auto;
 }
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -593,24 +684,52 @@ form .button button:hover {
   }
   /* contact responsive */
   .contact {
-      height: auto;
+    height: auto;
   }
-  .contactInfo{
-      padding: 30px 0;
+  .contactInfo {
+    padding: 30px 0;
   }
-  .contactContainer{
-      height: auto;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 30px 30px;
-
+  .contactContainer {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 30px;
   }
   form .parent {
     flex-direction: column;
     align-items: flex-start;
   }
-  .contactForm button{
-      margin-top: 15px;
+  .contactForm button {
+    margin-top: 15px;
+  }
+  .workExperience{
+    /* margin-top: ; */
+    flex-direction: column;
+    /* flex: 1 1; */
+  }
+  /* .resumeContent h2{
+    text-align: left;
+  } */
+  .resumeContent .underline{
+    margin-bottom: 0;
+    /* margin-left: 0; */
+  }
+  .workExperience h3{
+    margin-bottom: 20px;
+  }
+  .workExperienceTableRight .contentYear{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .workExperienceTableRight .contentPara{
+    margin-left: 0;
+  }
+  .workExperienceTableLeft, .workExperienceTableRight{
+    width: 100%;
+  }
+  .workExperienceTableRightContent{
+    flex-direction: column;
+    /* column-gap: 5px; */
   }
 }
 
@@ -656,8 +775,8 @@ form .button button:hover {
   .about .aboutContainerRight ul {
     justify-content: center;
   }
-  .contactContainer{
-      padding: 0 30px;
+  .contactContainer {
+    padding: 0 30px;
   }
 }
 
